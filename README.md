@@ -20,27 +20,6 @@ User interactions are enhanced through thoughtful visual feedback, including hov
 ### Character Preview System
 The live character preview serves as the centerpiece of the application, combining selected features in real-time. The preview area uses a subtle gradient background that complements the main design while keeping focus on the character being created.
 
-## Technical Design Approach
-
-### Progressive Enhancement
-The styling supports dynamic content loading, with sections appearing progressively based on user selections. This creates a smooth, guided experience that prevents overwhelming users with too many options at once.
-
-### Accessibility Focus
-The design system prioritizes accessibility through clear visual hierarchy, sufficient color contrast, and intuitive navigation patterns. Tooltips provide additional context, while status indicators clearly communicate availability and selection states.
-
-### Responsive Architecture
-The style guide includes comprehensive mobile optimization, with adjusted spacing, typography, and layout patterns that maintain usability across all screen sizes. The responsive design ensures the character creation experience remains engaging whether on desktop or mobile.
-
-## Design Philosophy
-
-### Inclusive Design
-The visual design supports the application's advocacy mission by clearly highlighting gaps in representation and providing intuitive pathways for users to suggest improvements. Advocacy elements are seamlessly integrated into the design flow without disrupting the creative process.
-
-### Brand Harmony
-While maintaining LEGO's recognizable aesthetic, the design introduces contemporary web standards and accessibility best practices. The result is a familiar yet modern interface that appeals to both long-time LEGO enthusiasts and new users.
-
-### Modular System
-The style guide employs a modular approach that allows for easy maintenance and future expansion. Individual components can be updated or extended without affecting the overall design system, supporting the application's evolving needs.
 
 ## Impact and Goals
 
