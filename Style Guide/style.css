@@ -568,6 +568,17 @@ body {
     font-size: 1rem;
     color: #c53030;
     margin-top: 20px;
+
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+
+    width: max-content;
+    max-width: calc(100% - 20px);
+    height: fit-content;
+    max-height: calc(100% - 20px);
 }
 
 .error-message h3 {
@@ -581,6 +592,7 @@ body {
 
 .error-message img {
     margin-top: 20px;
+    height: 300px;
 }
 
 .modal-overlay {

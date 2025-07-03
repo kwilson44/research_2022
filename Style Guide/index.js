@@ -517,7 +517,7 @@ function displayUnavailabilityMessage(title, message, graphImage, buttonText, bu
                     ${buttonText}
                 </button>
                 <div style="margin-top: 20px;">
-                    <img src="${graphImage}" alt="Representation Graph" style="width: 100%; max-width: 400px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                    <img src="${graphImage}" alt="Representation Graph" style="border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
                 </div>
                 <div style="margin-top: 20px; text-align: left; font-size: 0.9rem; color: #333;">
                     <h4>Instructions:</h4>
@@ -538,9 +538,10 @@ Thank you for considering this request!
                 </div>
             `;
 
-    const section = document.getElementById('fleshToneSection') || document.getElementById('expressionSection');
-    section.innerHTML = '';
-    section.appendChild(errorSection);
+    // const section = document.getElementById('fleshToneSection') || document.getElementById('expressionSection');
+    // section.innerHTML = '';
+
+    document.body.appendChild(errorSection);
 }
 
 function displayHairWarning() {
