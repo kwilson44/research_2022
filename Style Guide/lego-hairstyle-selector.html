@@ -1174,17 +1174,20 @@
             });
 
             // Add "Continue to Hair Selection" button
-            const continueBtn = document.createElement('button');
-            continueBtn.className = 'btn btn-primary';
-            continueBtn.textContent = 'Continue to Hair Selection';
-            continueBtn.style.marginTop = '20px';
-            continueBtn.addEventListener('click', () => {
-                currentStep = 3;
-                showHairSection();
-                updateProgress();
-            });
+            if (!document.getElementById('continue-hair-btn')){
+                const continueBtn = document.createElement('button');
+                continueBtn.id = 'continue-hair-btn';
+                continueBtn.className = 'btn btn-primary';
+                continueBtn.textContent = 'Continue to Hair Selection';
+                continueBtn.style.marginTop = '20px';
+                continueBtn.addEventListener('click', () => {
+                    currentStep = 3;
+                    showHairSection();
+                    updateProgress();
+                });
 
-            grid.parentElement.appendChild(continueBtn);
+                grid.parentElement.appendChild(continueBtn);
+            }
         }
 
         function selectExpression(expression, itemElement) {
@@ -1255,17 +1258,20 @@
             });
 
             // Add "Continue to Hair Selection" button
-            const continueBtn = document.createElement('button');
-            continueBtn.className = 'btn btn-primary';
-            continueBtn.textContent = 'Continue to Hair Selection';
-            continueBtn.style.marginTop = '20px';
-            continueBtn.addEventListener('click', () => {
-                currentStep = 3;
-                showHairSection();
-                updateProgress();
-            });
+            if (!document.getElementById('continue-hair-btn')){
+                const continueBtn = document.createElement('button');
+                continueBtn.id = 'continue-hair-btn';
+                continueBtn.className = 'btn btn-primary';
+                continueBtn.textContent = 'Continue to Hair Selection';
+                continueBtn.style.marginTop = '20px';
+                continueBtn.addEventListener('click', () => {
+                    currentStep = 3;
+                    showHairSection();
+                    updateProgress();
+                });
             
-            toggle.parentElement.appendChild(continueBtn);
+                toggle.parentElement.appendChild(continueBtn);
+            }
         }
 
         function toggleAccessory(accessory, itemElement) {
@@ -1326,13 +1332,16 @@
             });
 
             // Add warning button
-            const warningBtn = document.createElement('button');
-            warningBtn.className = 'btn btn-suggest';
-            warningBtn.textContent = '⚠️ Advocate for More Options';
-            warningBtn.style.marginTop = '20px';
-            warningBtn.addEventListener('click', displayHairWarning);
+            if (!document.getElementById('warning-btn')){
+                const warningBtn = document.createElement('button');
+                warningBtn.id = 'warning-btn';
+                warningBtn.className = 'btn btn-suggest';
+                warningBtn.textContent = '⚠️ Advocate for More Options';
+                warningBtn.style.marginTop = '20px';
+                warningBtn.addEventListener('click', displayHairWarning);
 
-            carousel.parentElement.appendChild(warningBtn);
+                carousel.parentElement.appendChild(warningBtn);
+            }
         }
 
         function previewHairColor(color, styleName) {
