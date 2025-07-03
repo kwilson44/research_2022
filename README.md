@@ -1,114 +1,47 @@
 # Inclusive LEGO Character Creator - Style Guide
 
-This README describes the CSS elements and styling approach for the **Inclusive LEGO Character Creator** application.
+This README provides a high-level overview of the visual design system for the **Inclusive LEGO Character Creator** application.
 
-## Global Styles
+## Purpose
 
-### Universal Reset
-- `*`: Resets margins, padding, and sets `box-sizing` to `border-box` for consistent layout across all elements.
+The style guide establishes a cohesive, accessible, and engaging visual framework that supports the application's mission of celebrating diversity and representation in LEGO minifigures. The design emphasizes LEGO's playful brand identity while maintaining professional usability and accessibility standards.
 
-### Body
-- `body`: Sets the font family, background gradient (LEGO red and yellow), minimum height, and text color for the entire page.
+## Key Design Elements
 
-## Layout Components
+### Visual Identity
+The application features a vibrant LEGO-inspired color scheme with red and yellow gradients that immediately evoke the beloved brand. The design balances playfulness with functionality, using card-based layouts and smooth animations to create an engaging user experience.
 
-### Container
-- `.container`: Defines the maximum width, centers content, and adds padding for spacing.
+### Layout Structure
+The interface is organized into distinct sections that guide users through the character creation process. Each section is presented as a clean, white card with rounded corners and subtle shadows, creating visual hierarchy and focus. A responsive grid system ensures the application works seamlessly across desktop and mobile devices.
 
-### Header
-- `.header`: Centers the header text, adds spacing below, and sets the text color to white.
-- `.header h1`: Styles the main title with a large font size, margin, and text shadow for emphasis.
-- `.header p`: Adds a smaller font size and slight opacity for the subtitle.
+### Interactive Components
+User interactions are enhanced through thoughtful visual feedback, including hover effects, selection states, and availability indicators. Option cards dynamically respond to user actions with color changes and border highlights, while unavailable options are clearly marked with reduced opacity and visual cues.
 
-### Sections
-- `.section`: Creates a card-like container with a white background, rounded corners, padding, and a shadow effect. Adds hover animation for interactivity.
-- `.section-title`: Centers section titles, sets font size, and adds spacing below.
+### Character Preview System
+The live character preview serves as the centerpiece of the application, combining selected features in real-time. The preview area uses a subtle gradient background that complements the main design while keeping focus on the character being created.
 
-## Interactive Elements
+## Technical Design Approach
 
-### Carousel
-- `.carousel`: Creates a horizontal scrolling container for hair options with smooth scrolling behavior.
-- `.carousel::-webkit-scrollbar`: Styles the scrollbar for better aesthetics.
+### Progressive Enhancement
+The styling supports dynamic content loading, with sections appearing progressively based on user selections. This creates a smooth, guided experience that prevents overwhelming users with too many options at once.
 
-### Option Cards
-- `.option-card`: Styles individual cards for selectable options with rounded corners, padding, and hover effects.
-- `.option-card.selected`: Highlights selected cards with a green border and background.
-- `.option-card.unavailable`: Styles unavailable cards with reduced opacity and a lock icon.
+### Accessibility Focus
+The design system prioritizes accessibility through clear visual hierarchy, sufficient color contrast, and intuitive navigation patterns. Tooltips provide additional context, while status indicators clearly communicate availability and selection states.
 
-### Option Images
-- `.option-image`: Creates a placeholder for images with dashed borders and rounded corners.
-- `.option-image img`: Ensures images fit within the container while maintaining aspect ratio.
-
-### Option Details
-- `.option-name`: Styles the name of the option with bold text and centered alignment.
-- `.option-description`: Adds smaller text for descriptions with line spacing.
-- `.part-number`: Displays the LEGO part number in italicized text.
-
-## Status Indicators
-
-### Availability Status
-- `.availability-status`: Adds a badge-like indicator for availability.
-- `.status-available`: Styles available status with a green gradient and bold text.
-- `.status-unavailable`: Styles unavailable status with a red gradient and bold text.
-
-### Tooltip
-- `.tooltip`: Creates a floating box for additional information, hidden by default, and shown on hover.
-
-## Character Preview
-
-### Preview Section
-- `.character-preview`: Styles the preview section with a light red gradient background and rounded corners.
-- `.lego-figure`: Aligns LEGO figure components vertically.
-- `.lego-head`, `.lego-hair`: Styles the head and hair placeholders with circular shapes and borders.
-- `.accessories`: Ensures accessories are layered above the head.
-
-### Accessory Styles
-- `.accessory-item`: Styles individual accessory options with padding, rounded corners, and hover effects.
-- `.accessory-checkbox`: Adds a checkbox for accessory selection.
-
-## Grid and Navigation
-
-### Selection Grid
-- `.selection-grid`: Creates a responsive grid layout for selectable items.
-
-### Buttons
-- `.btn`: Styles buttons with padding, rounded corners, and hover effects.
-- `.btn-primary`, `.btn-secondary`, `.btn-suggest`: Adds specific colors for different button types.
-
-### Progress Bar
-- `.progress-bar`: Creates a visual indicator for progress through the steps.
-- `.progress-fill`: Fills the progress bar dynamically based on the current step.
-
-## Final Actions
-
-### Call to Action
-- `.final-actions`: Styles the final section with a white background, rounded corners, and shadow effects.
-- `.call-to-action`: Highlights advocacy text with a gradient background.
-
-## User Feedback
-
-### Error Messages
-- `.error-message`: Styles error messages with a red background, rounded corners, and centered text.
-
-### Modal
-- `.modal-overlay`: Creates a semi-transparent overlay for modals.
-- `.modal-content`: Styles the modal box with padding, rounded corners, and shadows.
-
-## Responsive Design
-
-### Mobile Optimization
-- `@media (max-width: 768px)`: Adjusts styles for smaller screens, including reduced padding and font sizes.
+### Responsive Architecture
+The style guide includes comprehensive mobile optimization, with adjusted spacing, typography, and layout patterns that maintain usability across all screen sizes. The responsive design ensures the character creation experience remains engaging whether on desktop or mobile.
 
 ## Design Philosophy
 
-This style guide ensures a visually appealing, interactive, and accessible design for the LEGO Character Creator. The styling approach emphasizes:
+### Inclusive Design
+The visual design supports the application's advocacy mission by clearly highlighting gaps in representation and providing intuitive pathways for users to suggest improvements. Advocacy elements are seamlessly integrated into the design flow without disrupting the creative process.
 
-- **Consistency**: Unified spacing, colors, and typography throughout the application
-- **Accessibility**: Clear visual hierarchy and interactive feedback
-- **Responsiveness**: Adaptive design that works across different screen sizes
-- **Interactivity**: Hover effects and visual feedback for user actions
-- **Brand Alignment**: LEGO-inspired color scheme and playful design elements
+### Brand Harmony
+While maintaining LEGO's recognizable aesthetic, the design introduces contemporary web standards and accessibility best practices. The result is a familiar yet modern interface that appeals to both long-time LEGO enthusiasts and new users.
 
-## Usage Notes
+### Modular System
+The style guide employs a modular approach that allows for easy maintenance and future expansion. Individual components can be updated or extended without affecting the overall design system, supporting the application's evolving needs.
 
-All classes are designed to work together cohesively. The modular approach allows for easy maintenance and extension of the design system as new features are added to the application.
+## Impact and Goals
+
+This design system creates an environment where users can engage meaningfully with representation in LEGO products. By combining intuitive usability with clear advocacy pathways, the visual design supports both creative expression and social impact, encouraging users to not only create diverse characters but also advocate for broader representation in LEGO's official products.
