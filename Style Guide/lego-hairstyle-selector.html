@@ -419,6 +419,29 @@
             margin: 5px;
         }
 
+        .btn-icon {
+            padding: 0px 0px;
+            border: none;
+            border-radius: 4px;
+            font-size: 28px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0.5px;
+        }
+
+        .btn-icon-head {
+            background: #ffffff;
+            color: white;
+        }
+
+        .btn-icon-head:hover {
+            background: #5a6fd8;
+            transform: translateY(-2px);
+        }
+
         .btn-primary {
             background: #667eea;
             color: white;
@@ -584,7 +607,8 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🧱 Inclusive LEGO Character Creator</h1>
+            <h1><button class="btn-icon btn-icon-head" onclick="window.location.reload();">🧱</button> Inclusive LEGO Character Creator 
+                <a href="https://womensbrickinitiative.com/"><img src="images/logo.png" alt="WBI" style="float:right;width:62px;height:62px;"></a></h1>
             <p>Explore, learn, and create your unique LEGO character while celebrating diversity and representation. Help us advocate for more inclusive LEGO parts!</p>
         </div>
 
@@ -1150,17 +1174,20 @@
             });
 
             // Add "Continue to Hair Selection" button
-            const continueBtn = document.createElement('button');
-            continueBtn.className = 'btn btn-primary';
-            continueBtn.textContent = 'Continue to Hair Selection';
-            continueBtn.style.marginTop = '20px';
-            continueBtn.addEventListener('click', () => {
-                currentStep = 3;
-                showHairSection();
-                updateProgress();
-            });
+            if (!document.getElementById('continue-hair-btn')){
+                const continueBtn = document.createElement('button');
+                continueBtn.id = 'continue-hair-btn';
+                continueBtn.className = 'btn btn-primary';
+                continueBtn.textContent = 'Continue to Hair Selection';
+                continueBtn.style.marginTop = '20px';
+                continueBtn.addEventListener('click', () => {
+                    currentStep = 3;
+                    showHairSection();
+                    updateProgress();
+                });
 
-            grid.parentElement.appendChild(continueBtn);
+                grid.parentElement.appendChild(continueBtn);
+            }
         }
 
         function selectExpression(expression, itemElement) {
@@ -1231,17 +1258,20 @@
             });
 
             // Add "Continue to Hair Selection" button
-            const continueBtn = document.createElement('button');
-            continueBtn.className = 'btn btn-primary';
-            continueBtn.textContent = 'Continue to Hair Selection';
-            continueBtn.style.marginTop = '20px';
-            continueBtn.addEventListener('click', () => {
-                currentStep = 3;
-                showHairSection();
-                updateProgress();
-            });
+            if (!document.getElementById('continue-hair-btn')){
+                const continueBtn = document.createElement('button');
+                continueBtn.id = 'continue-hair-btn';
+                continueBtn.className = 'btn btn-primary';
+                continueBtn.textContent = 'Continue to Hair Selection';
+                continueBtn.style.marginTop = '20px';
+                continueBtn.addEventListener('click', () => {
+                    currentStep = 3;
+                    showHairSection();
+                    updateProgress();
+                });
             
-            toggle.parentElement.appendChild(continueBtn);
+                toggle.parentElement.appendChild(continueBtn);
+            }
         }
 
         function toggleAccessory(accessory, itemElement) {
@@ -1302,13 +1332,16 @@
             });
 
             // Add warning button
-            const warningBtn = document.createElement('button');
-            warningBtn.className = 'btn btn-suggest';
-            warningBtn.textContent = '⚠️ Advocate for More Options';
-            warningBtn.style.marginTop = '20px';
-            warningBtn.addEventListener('click', displayHairWarning);
+            if (!document.getElementById('warning-btn')){
+                const warningBtn = document.createElement('button');
+                warningBtn.id = 'warning-btn';
+                warningBtn.className = 'btn btn-suggest';
+                warningBtn.textContent = '⚠️ Advocate for More Options';
+                warningBtn.style.marginTop = '20px';
+                warningBtn.addEventListener('click', displayHairWarning);
 
-            carousel.parentElement.appendChild(warningBtn);
+                carousel.parentElement.appendChild(warningBtn);
+            }
         }
 
         function previewHairColor(color, styleName) {
