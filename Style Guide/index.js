@@ -99,7 +99,7 @@ function generateExpressionOptions() {
         item.className = `selection-item ${isAvailable ? '' : 'unavailable'}`;
 
         item.innerHTML = `
-                    <img src="${isAvailable ? `images/${selectedFleshTone.toLowerCase().replace(/ /g, '-')}-${expressionName.toLowerCase().replace(/ /g, '-')}.jpg` : 'images/placeholder.jpg'}" alt="${expressionName}" style="width: 60px; height: 60px; border-radius: 50%; margin-bottom: 10px; border: 3px solid #333;">
+                    <div class="image-frame" style="background-image: url(${isAvailable ? `images/${selectedFleshTone.toLowerCase().replace(/ /g, '-')}-${expressionName.toLowerCase().replace(/ /g, '-')}.jpg`: 'images/placeholder.jpg'})" alt="${expressionName}"></div>
                     <div><strong>${expressionName}</strong></div>
                     <div style="font-size: 0.8rem; color: #666;">${isAvailable ? 'Available' : 'Not Available'}</div>
                     ${isAvailable && brickLinkUrl ? `<a href="${brickLinkUrl}" target="_blank" class="btn btn-primary">🔗 View on BrickLink</a>` : ''}
