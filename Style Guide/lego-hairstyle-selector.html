@@ -419,6 +419,29 @@
             margin: 5px;
         }
 
+        .btn-icon {
+            padding: 0px 0px;
+            border: none;
+            border-radius: 4px;
+            font-size: 28px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0.5px;
+        }
+
+        .btn-icon-head {
+            background: #ffffff;
+            color: white;
+        }
+
+        .btn-icon-head:hover {
+            background: #5a6fd8;
+            transform: translateY(-2px);
+        }
+
         .btn-primary {
             background: #667eea;
             color: white;
@@ -584,7 +607,8 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🧱 Inclusive LEGO Character Creator</h1>
+            <h1><button class="btn-icon btn-icon-head" onclick="window.location.reload();">🧱</button> Inclusive LEGO Character Creator 
+                <a href="https://womensbrickinitiative.com/"><img src="images/logo.png" alt="WBI" style="float:right;width:62px;height:62px;"></a></h1>
             <p>Explore, learn, and create your unique LEGO character while celebrating diversity and representation. Help us advocate for more inclusive LEGO parts!</p>
         </div>
 
